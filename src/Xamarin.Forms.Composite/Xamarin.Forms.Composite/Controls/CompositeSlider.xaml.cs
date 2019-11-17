@@ -6,6 +6,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Composite.Controls
 {
+    /// <summary>
+    /// This is just a basic control to test options around the idea of using ControlTemplates. 
+    /// To complete the control:
+    /// - Improve the logic to update the position of the Thumb.
+    /// - Add Command, CommandParameter and other properties.
+    /// - Some adjustment by platform.
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CompositeSlider : TemplateView, ICompositeElementConfiguration
     {
@@ -152,7 +159,7 @@ namespace Xamarin.Forms.Composite.Controls
 
         void UpdateContent()
         {
-            var template = ControlTemplate;
+            var template = Template;
 
             if (template == null)
                 return;

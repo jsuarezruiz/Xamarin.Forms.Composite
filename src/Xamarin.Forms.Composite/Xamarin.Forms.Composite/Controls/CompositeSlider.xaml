@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Xamarin.Forms.Composite.Controls.CompositeSlider"
-    ControlTemplate="{StaticResource DefaultCompositeSliderTemplate}">
+    Template="{StaticResource DefaultCompositeSliderTemplate}">
     <composite:TemplateView.Resources>
         <ResourceDictionary>
 

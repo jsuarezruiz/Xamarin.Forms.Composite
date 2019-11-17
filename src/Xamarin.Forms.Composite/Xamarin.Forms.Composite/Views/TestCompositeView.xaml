@@ -114,12 +114,12 @@
             Value="50"/>
         <Label Text="CompositeSlider with custom ControlTemplate" />
         <controls:CompositeSlider 
-            ControlTemplate="{StaticResource CustomSliderTemplate}"
+            Template="{StaticResource CustomSliderTemplate}"
             Minimum="0"
             Maximum="100"
             Value="50"/>
         <controls:CompositeSlider 
-            ControlTemplate="{StaticResource GradientSliderTemplate}"
+            Template="{StaticResource GradientSliderTemplate}"
             Value="50"/>
     </StackLayout>
 </ContentPage>
