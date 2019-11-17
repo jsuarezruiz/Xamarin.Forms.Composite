@@ -1,6 +1,8 @@
 # Xamarin.Forms Composite Controls
 
-In this repository there are only some tests related to the idea of composite controls and above all have a **Template** property and be able to use **ControlTemplate** to customize a control.
+In this repository there are only some tests related to the idea of composite controls, have a **Template** property and be able to use **ControlTemplate** to customize a control.
+
+![Composite Controls](images/xamarinforms-controltemplate.gif)
 
 ## Let's see more details!
 
@@ -72,3 +74,6 @@ Memory
 Startup time (Release AOT)
 * 797ms - Slider
 * 801ms - Slider (Composite)
+
+## Feedback
+You can create feedback in this repository. If you have any questions, please don't hesitate to create an issue.
