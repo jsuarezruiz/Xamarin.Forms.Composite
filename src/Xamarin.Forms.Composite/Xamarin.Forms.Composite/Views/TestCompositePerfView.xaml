@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ProfilerPage
+    xmlns:views="clr-namespace:Xamarin.Forms.Composite.Views"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Xamarin.Forms.Composite.Controls"
+    x:Class="Xamarin.Forms.Composite.Views.TestCompositePerfView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+            <Color x:Key="SliderColor">#000000</Color>
+
+            <Style TargetType="Slider">
+                <Setter Property="MinimumTrackColor" Value="{StaticResource SliderColor}" />
+                <Setter Property="MaximumTrackColor" Value="{StaticResource SliderColor}" />
+                <Setter Property="ThumbColor" Value="{StaticResource SliderColor}" />
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label 
+                FontSize="12" 
+                FontAttributes="Bold"
+                Text="{Binding FirstTiming.ElapsedTime}"/>
+            <!--
+            <Slider Minimum="0" Maximum="10" Value="1" />
+            <Slider Minimum="0" Maximum="10" Value="2" />
+            <Slider Minimum="0" Maximum="10" Value="3" />
+            <Slider Minimum="0" Maximum="10" Value="4" />
+            <Slider Minimum="0" Maximum="10" Value="5" />
+            <Slider Minimum="0" Maximum="10" Value="6" />
+            <Slider Minimum="0" Maximum="10" Value="7" />
+            <Slider Minimum="0" Maximum="10" Value="8" />
+            <Slider Minimum="0" Maximum="10" Value="9" />
+            <Slider Minimum="0" Maximum="10" Value="10" />
+            -->
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="1" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="2" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="3" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="4" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="5" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="6" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="7" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="8" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="9" />
+            <controls:CompositeSlider Minimum="0" Maximum="10" Value="10" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</views:ProfilerPage>

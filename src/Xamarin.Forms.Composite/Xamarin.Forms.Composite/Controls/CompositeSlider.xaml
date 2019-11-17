@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<composite:TemplateView
+    xmlns:composite="clr-namespace:Xamarin.Forms.Composite"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Xamarin.Forms.Composite.Controls.CompositeSlider"
+    ControlTemplate="{StaticResource DefaultCompositeSliderTemplate}">
+    <composite:TemplateView.Resources>
+        <ResourceDictionary>
+
+            <ControlTemplate x:Key="DefaultCompositeSliderTemplate">
+                <Grid 
+                    VerticalOptions="Center"
+                    Margin="10, 0">
+                    <BoxView 
+                        x:Name="MaximumTrack"
+                        Margin="6,0"
+                        CornerRadius="1"
+                        HeightRequest="2"
+                        Opacity="0.24"
+                        VerticalOptions="Center" />
+                    <BoxView 
+                        x:Name="MinimumTrack"
+                        Margin="6,0"
+                        CornerRadius="1"
+                        HeightRequest="2"
+                        HorizontalOptions="Start"
+                        InputTransparent="True"
+                        VerticalOptions="Center"
+                        WidthRequest="0" />
+                    <Frame 
+                        x:Name="Thumb"
+                        Padding="0"
+                        CornerRadius="6"
+                        HeightRequest="12"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        WidthRequest="12" />
+                </Grid>
+            </ControlTemplate>
+
+        </ResourceDictionary>
+    </composite:TemplateView.Resources>
+</composite:TemplateView>
