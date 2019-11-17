@@ -13,8 +13,8 @@ namespace Xamarin.Forms.Composite
         {
             InitializeComponent();
 
-            MainPage = new TestCompositeView();
-            //MainPage = new TestCompositePerfView();
+            //MainPage = new TestCompositeView();
+            MainPage = new TestCompositePerfView();
         }
 
         protected override void OnStart()

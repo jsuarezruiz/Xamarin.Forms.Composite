@@ -52,7 +52,7 @@ And we use it:
 
 ```
 <Slider 
-    ControlTemplate="{StaticResource CustomSliderTemplate}"/>
+    Template="{StaticResource CustomSliderTemplate}"/>
 ```
 
 The result:
@@ -62,3 +62,13 @@ The result:
 We can use XAML Hot Reload to adjust the appearance:
 
 ![Using XAML Hot Reload](images/xamarinforms-edit-controltemplate.gif)
+
+Some **performance** related data (using Android):
+
+Memory
+* 127545344 (121MB) - Slider
+* 127246336 (121MB) - Slider (Composite)
+
+Startup time (Release AOT)
+* 797ms - Slider
+* 801ms - Slider (Composite)
